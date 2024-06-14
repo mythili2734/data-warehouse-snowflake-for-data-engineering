@@ -36,8 +36,8 @@ This project demonstrates to build a robust and scalable data pipeline that can 
 ### Project Execution Flow:
 
 1. **EC2 Setup:**
-  *Connect to EC2 instance using SSH.:*
-  *Copy project files to EC2 instance.:*
+Connect to EC2 instance using SSH.
+Copy project files to EC2 instance.
 
 #### Conclusion:
 
