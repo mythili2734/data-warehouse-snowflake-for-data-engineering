@@ -18,22 +18,6 @@ This project demonstrates to build a robust and scalable data pipeline that can 
 5. *Python Faker Library:* Generates fake data for testing and development purposes.
 
 
-#### Components:
-
-1. *Apache NiFi:*
-   - *Data Ingestion:* Use NiFi to collect data from various sources (e.g., APIs, IoT devices, databases).
-   - *Data Transformation:* Transform and format the data as required before sending it to AWS.
-
-2. *AWS Services:*
-   - *S3:* Store the data files.
-   - *SNS/SQS:* Facilitate messaging and notification for data processing workflows.
-   - *Lambda:* Process and move data between services if necessary.
-
-3. *Snowflake:*
-   - *Snowpipe:* Automatically ingest data from S3 into Snowflake.
-   - *Streams:* Track changes in tables (e.g., new data ingested by Snowpipe).
-   - *Tasks:* Automate and schedule SQL operations based on the data ingested.
-
 #### Pipeline Overview
 
 1. *Data Generation:*
@@ -49,6 +33,11 @@ This project demonstrates to build a robust and scalable data pipeline that can 
    - Analyze the ingested data in Snowflake to gain real-time insights.
   
 
+###Project Execution Flow:
+
+*EC2 Setup:*
+  -Connect to EC2 instance using SSH.
+  -Copy project files to EC2 instance.
 
 #### Conclusion:
 
