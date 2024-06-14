@@ -11,11 +11,16 @@ This project demonstrates to build a robust and scalable data pipeline that can 
 
 ### Technologies Used:
 
-*AWS:* - Amazon Web Services provides cloud computing services for storing data and running applications.
-*Snowflake:* - A cloud-based data warehousing platform for data storage and analysis.
-*Apache NiFi:* - An open-source data integration platform that facilitates the automation of data flow between systems.
-*Docker:* -Used for containerization of applications and services for easy deployment.
-*Python Faker Library:* -Generates fake data for testing and development purposes.
+1. *AWS:* 
+   - Amazon Web Services provides cloud computing services for storing data and running applications.
+2. *Snowflake:*
+   - A cloud-based data warehousing platform for data storage and analysis.
+3. *Apache NiFi:*
+    - An open-source data integration platform that facilitates the automation of data flow between systems.
+4. *Docker:*
+    -Used for containerization of applications and services for easy deployment.
+5. *Python Faker Library:*
+   -Generates fake data for testing and development purposes.
 
 
 #### Components:
