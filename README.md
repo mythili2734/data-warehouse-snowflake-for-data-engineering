@@ -1,11 +1,14 @@
-Data-Warehouse-Snowflake-For-Data-Engineering
-
-
-![image](https://github.com/mythili2734/data-warehouse-snowflake-for-data-engineering/assets/158598007/69323ad9-ae96-47a5-9158-4a3e042b20b7)
 
 ### Real-Time Data Streaming using Apache NiFi, AWS, Snowpipe, and Snowflake Streams and Tasks
 
 #### Project Description
+
+
+*Architecture:*
+
+
+![Architecture for snowflake](https://github.com/mythili2734/data-warehouse-snowflake-for-data-engineering/assets/158598007/f5cead9c-7681-4803-8c63-37eeae93c0fe)
+
 
 *Objective:*
 Implement a real-time data streaming pipeline that ingests data using Apache NiFi, processes it through AWS services, and loads it into Snowflake for further processing using Snowpipe, Streams, and Tasks.
