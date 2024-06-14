@@ -52,37 +52,27 @@ Implement a real-time data streaming pipeline that ingests data using Apache NiF
    - *Tasks:*
      - *Automation:* Schedule tasks to process new data ingested by Snowpipe and tracked by streams. Tasks can run SQL scripts to perform aggregations, updates, and other operations on the data.
 
-#### Step-by-Step Implementation:
-
-1. *Apache NiFi Setup:*
-   - Install and configure NiFi.
-   - Create a data flow to collect and process data from sources.
-   - Configure processors to send the data to an AWS S3 bucket.
-
-2. *AWS S3 Configuration:*
-   - Create an S3 bucket.
-   - Set up the necessary IAM policies and roles for NiFi to write data to S3.
-   - Configure event notifications to trigger subsequent processing steps.
-
-3. *AWS Lambda Configuration (if needed):*
-   - Write Lambda functions to process data files.
-   - Set up the Lambda function to trigger on S3 event notifications.
-
-4. *Snowflake Configuration:*
-   - Set up a Snowflake account and create the necessary database, schemas, and tables.
-   - Configure Snowpipe to monitor the S3 bucket and automatically ingest data.
-   - Create streams on the ingested tables to capture changes.
-   - Define tasks to automate processing based on the streams.
-
-5. *Testing and Validation:*
-   - Test the end-to-end data flow to ensure data is ingested, processed, and loaded correctly.
-   - Validate the data in Snowflake to ensure it meets the expected format and content.
-
-6. *Monitoring and Maintenance:*
-   - Implement monitoring for each component (NiFi, S3, Lambda, Snowflake).
-   - Set up alerts for failures or performance issues.
-   - Regularly review and update the data pipeline to handle new data sources or changes in data format.
+#### Project Structure:
+real-time-data-analysis-pipeline/
+├── data_generation/
+│   ├── generate_data.ipynb     # Jupyter notebook for generating fake data
+├── docker/
+│   └── docker-compose.yml      # Docker Compose configuration file
+├── nifi/
+│   └── nifi_flow.xml           # NiFi flow configuration file (if applicable)
+├── scripts/
+│   ├── install_docker.sh       # Shell script for Docker installation
+│   ├── setup_ec2.sh            # Shell script for EC2 setup
+│   └── configure_nifi.sh       # Shell script for NiFi configuration
+├── snowflake/
+│   ├── create_tables.sql       # SQL script for creating Snowflake tables
+│   ├── create_stream.sql       # SQL script for creating Snowflake stream
+│   ├── create_stage.sql        # SQL script for creating Snowflake stage
+│   └── create_snowpipe.sql     # SQL script for creating Snowpipe
+├── .gitignore                  # Git ignore file
+├── README.md                   # Project README file
+└── requirements.txt            # Python dependencies file
 
 #### Conclusion:
 
-This project integrates multiple technologies to build a robust real-time data streaming pipeline. Apache NiFi handles data ingestion and initial processing, AWS services provide scalable storage and compute capabilities, and Snowflake's Snowpipe, Streams, and Tasks ensure efficient data ingestion, change tracking, and automated processing. This architecture can be scaled and adapted to various real-time data processing needs.
+This project demonstrates the end-to-end process of real-time data analysis using AWS, Snowflake, and NiFi. By integrating these technologies, organizations can efficiently manage and analyze large volumes of data, enabling informed decision-making and insights generation. The automation capabilities provided by Snowflake tasks and NiFi streamline the data processing pipeline, enhancing efficiency and scalability.
