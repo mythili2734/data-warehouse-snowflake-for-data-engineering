@@ -33,11 +33,11 @@ This project demonstrates to build a robust and scalable data pipeline that can 
    - Analyze the ingested data in Snowflake to gain real-time insights.
   
 
-###Project Execution Flow:
+### Project Execution Flow:
 
-*EC2 Setup:*
-  -Connect to EC2 instance using SSH.
-  -Copy project files to EC2 instance.
+1. **EC2 Setup:**
+  *Connect to EC2 instance using SSH.:*
+  *Copy project files to EC2 instance.:*
 
 #### Conclusion:
 
