@@ -74,8 +74,8 @@ This project demonstrates to build a robust and scalable data pipeline that can 
      - Connect to NiFi container.
      - Navigate to the generated fake data file.
      - Configure the NiFi job:
-       -- Create a processor group with ListFile, FetchFile, and PutS3Object processors.
-        -- Configure the processors with appropriate settings.
+     - Create a processor group with ListFile, FetchFile, and PutS3Object processors.
+     - Configure the processors with appropriate settings.
 
 10. *Snowflake Setup:*
       - Create tables for customer data.
