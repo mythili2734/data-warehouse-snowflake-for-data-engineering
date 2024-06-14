@@ -34,28 +34,20 @@ This project demonstrates to build a robust and scalable data pipeline that can 
    - *Streams:* Track changes in tables (e.g., new data ingested by Snowpipe).
    - *Tasks:* Automate and schedule SQL operations based on the data ingested.
 
-#### Detailed Workflow:
+#### Pipeline Overview
 
-1. *Data Ingestion with Apache NiFi:*
-   - *Source Integration:* Configure NiFi processors to fetch data from various sources.
-   - *Data Transformation:* Use NiFi's transformation capabilities to format and clean the data.
-   - *Data Flow:* Direct the transformed data into an AWS S3 bucket.
+1. *Data Generation:*
+   - Use the Python Faker library to generate fake data for testing and development purposes.
 
-2. *AWS S3:*
-   - *Storage:* Store the incoming data files from NiFi.
-   - *Event Notifications:* Set up S3 event notifications to trigger further processing, such as invoking AWS Lambda or notifying via SNS/SQS.
+2. *Data Storage:*
+   - Store the generated data in AWS S3.
 
-3. *AWS Lambda (optional):*
-   - *Data Processing:* Perform additional processing or validation if needed.
-   - *S3 to Snowflake:* If more complex processing is required before loading into Snowflake, use Lambda functions.
+3. *Data Processing:*
+   - Use Snowpipe, Stream, Task to automatically ingest the data from S3 into Snowflake .
 
-4. *Snowflake Integration:*
-   - *Snowpipe:*
-     - *Automatic Ingestion:* Configure Snowpipe to listen for new files in the S3 bucket and load them into Snowflake tables.
-   - *Streams:*
-     - *Change Data Capture:* Create streams to track changes in the Snowflake tables, enabling real-time data processing.
-   - *Tasks:*
-     - *Automation:* Schedule tasks to process new data ingested by Snowpipe and tracked by streams. Tasks can run SQL scripts to perform aggregations, updates, and other operations on the data.
+4. *Data Analysis:*
+   - Analyze the ingested data in Snowflake to gain real-time insights.
+  
 
 
 #### Conclusion:
