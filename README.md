@@ -1,5 +1,8 @@
 Data-Warehouse-Snowflake-For-Data-Engineering
 
+
+![image](https://github.com/mythili2734/data-warehouse-snowflake-for-data-engineering/assets/158598007/69323ad9-ae96-47a5-9158-4a3e042b20b7)
+
 ### Real-Time Data Streaming using Apache NiFi, AWS, Snowpipe, and Snowflake Streams and Tasks
 
 #### Project Description
