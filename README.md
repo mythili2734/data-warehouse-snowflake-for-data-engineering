@@ -18,7 +18,7 @@ This project demonstrates to build a robust and scalable data pipeline that can 
 3. *Apache NiFi:*
     - An open-source data integration platform that facilitates the automation of data flow between systems.
 4. *Docker:*
-    -Used for containerization of applications and services for easy deployment.
+   -Used for containerization of applications and services for easy deployment.
 5. *Python Faker Library:*
    -Generates fake data for testing and development purposes.
 
