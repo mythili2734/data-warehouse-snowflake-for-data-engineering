@@ -35,9 +35,70 @@ This project demonstrates to build a robust and scalable data pipeline that can 
 
 ### Project Execution Flow:
 
-1. **EC2 Setup:**
-Connect to EC2 instance using SSH.
-Copy project files to EC2 instance.
+1. *EC2 Setup:*
+   - Connect to EC2 instance using SSH.
+   - Copy project files to EC2 instance.
+  
+3. *Docker Installation:*
+    - Update the Software.
+    - Install Docker on the EC2 instance.
+    - Install Docker Compose.
+    - Grant execution permission to Docker Compose.
+    - Install pip.
+    - Install Docker Compose pip package.
+  
+4. *Docker Configuration:*
+    - Create your docker-compose.yml file and store it in a folder with the .pem file.
+    - Copy files to EC2.
+    - Check Docker installation.
+    - Start Docker.
+    - Verify Docker container is running.
+  
+5. *Running Docker Compose:*
+    - Navigate to the docker-compose directory.
+    - Pull images and start services.
+
+6. *Security Group Configuration:*
+    - Update inbound rules for EC2 instance.
+    - Add Custom TCP rules for specific port numbers defined in docker-compose.yml.
+  
+7. *Accessing Services:*
+    - Access Jupyter Notebook via EC2 public DNS and port 4888.
+    - Access Apache NiFi via EC2 public DNS and port 2080.
+  
+8. *Data Generation with Jupyter:*
+    - Generate fake data using Faker module in Jupyter Notebook.
+    - Store fake data in CSV format.
+
+9. *NiFi Configuration:*
+     - Connect to NiFi container.
+     - Navigate to the generated fake data file.
+     - Configure the NiFi job:
+       -- Create a processor group with ListFile, FetchFile, and PutS3Object processors.
+        -- Configure the processors with appropriate settings.
+
+10. *Snowflake Setup:*
+      - Create tables for customer data.
+      - Create a stream on the customer table.
+      - Set up stage on the S3 bucket.
+      - Create Snowpipe on the stage to copy files into customer_raw table.
+   
+11. *Snowpipe and AWS SQS Integration:*
+      - Configure Snowpipe notification channel.
+      - Create an event notification in AWS with necessary details.
+   
+12. *Handling Data Changes:*
+      - Create a procedure for incremental data.
+      - Use MERGE statements for upsert operations.
+      - Automate the procedure with Tasks.
+      - Create roles and provide necessary permissions.
+      - Schedule tasks to run the procedure at specified intervals.
+   
+13. *Data Analysis:*
+      - Analyze the data stored in Snowflake for real-time insights.
+      - Utilize Snowflake features for data querying, manipulation, and visualization.
+    
+
 
 #### Conclusion:
 
