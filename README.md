@@ -4,18 +4,18 @@
 This project demonstrates to build a robust and scalable data pipeline that can generate, store, process, and analyze data streams in real-time. By leveraging the capabilities of AWS, Snowflake, and Apache NiFi, this pipeline aims to automate data flows, ensure data integrity, and provide immediate analytical insights.
 
 
-###Architecture:
+### Architecture:
 
 
 ![Architecture for snowflake](https://github.com/mythili2734/data-warehouse-snowflake-for-data-engineering/assets/158598007/f5cead9c-7681-4803-8c63-37eeae93c0fe)
 
 ### Technologies Used:
 
-*AWS:* Amazon Web Services provides cloud computing services for storing data and running applications.
-*Snowflake:* A cloud-based data warehousing platform for data storage and analysis.
-*Apache NiFi:* An open-source data integration platform that facilitates the automation of data flow between systems.
-*Docker:* Used for containerization of applications and services for easy deployment.
-*Python Faker Library:* Generates fake data for testing and development purposes.
+*AWS:* - Amazon Web Services provides cloud computing services for storing data and running applications.
+*Snowflake:* - A cloud-based data warehousing platform for data storage and analysis.
+*Apache NiFi:* - An open-source data integration platform that facilitates the automation of data flow between systems.
+*Docker:* -Used for containerization of applications and services for easy deployment.
+*Python Faker Library:* -Generates fake data for testing and development purposes.
 
 
 #### Components:
